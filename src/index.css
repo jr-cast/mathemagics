@@ -25,3 +25,83 @@ code {
     'Courier New',
     monospace;
 }
+
+.main {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  min-width: 30%;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: white;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25em;
+  grid-template-areas: 'header header header header';
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.25);
+}
+
+.grid-itemResult {
+  width: 30em;
+  height: 4.5em;
+  cursor: pointer;
+  grid-area: header;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.grid-itemResult span {
+  font-size: 2em;
+  padding: 0.5em;
+}
+
+.grid-item {
+  height: 4.5em;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  border: 1px solid black;
+  font-size: 1.1em;
+}
+
+.grid-zero {
+  height: 4.5em;
+  border: 1px solid black;
+  cursor: pointer;
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  font-weight: bolder;
+  font-size: 1.1em;
+}
+
+.grid-item,
+.grid-zero {
+  transition-property: transform;
+  transition-duration: 0.05s;
+  transition-timing-function: ease-in;
+  font-weight: bolder;
+}
+
+.grid-item:active,
+.grid-zero:active {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.operator {
+  background-color: orangered;
+}
