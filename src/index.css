@@ -25,3 +25,16 @@ code {
     'Courier New',
     monospace;
 }
+
+.main {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  border: 2px solid black;
+  width: 40%;
+  height: 60vh;
+}
