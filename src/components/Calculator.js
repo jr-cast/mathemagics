@@ -2,7 +2,6 @@ import { useState } from 'react';
 import calculate from '../logic/calculate';
 import Button from './Button';
 
-// eslint-disable-next-line react/prefer-stateless-function
 function Calculator() {
   const [values, setValues] = useState(
     {
@@ -30,7 +29,7 @@ function Calculator() {
         </div>
         <Button className="grid-item" text="AC" onClick={compute} />
         <Button className="grid-item" text="+/-" onClick={compute} />
-        <Button className="grid-item" text="%" onClick={calculate} />
+        <Button className="grid-item" text="%" onClick={compute} />
         <Button className="grid-item operator" text="÷" onClick={compute} />
         <Button className="grid-item" text="7" onClick={compute} />
         <Button className="grid-item" text="8" onClick={compute} />
