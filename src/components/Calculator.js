@@ -1,5 +1,6 @@
 import React from 'react';
 import calculate from '../logic/calculate';
+import Button from './Button';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class Calculator extends React.Component {
@@ -36,25 +37,25 @@ class Calculator extends React.Component {
               {next}
             </span>
           </div>
-          <div role="button" className="grid-item" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>AC</div>
-          <div role="button" className="grid-item" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>+/-</div>
-          <div role="button" className="grid-item" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>%</div>
-          <div role="button" className="grid-item operator" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>÷</div>
-          <div role="button" className="grid-item" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>7</div>
-          <div role="button" className="grid-item" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>8</div>
-          <div role="button" className="grid-item" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>9</div>
-          <div role="button" className="grid-item operator" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>x</div>
-          <div role="button" className="grid-item" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>4</div>
-          <div role="button" className="grid-item" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>5</div>
-          <div role="button" className="grid-item" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>6</div>
-          <div role="button" className="grid-item operator" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>-</div>
-          <div role="button" className="grid-item" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>1</div>
-          <div role="button" className="grid-item" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>2</div>
-          <div role="button" className="grid-item" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>3</div>
-          <div role="button" className="grid-item operator" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>+</div>
-          <div role="button" className="grid-zero" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>0</div>
-          <div role="button" className="grid-item" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>.</div>
-          <div role="button" className="grid-item operator" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>=</div>
+          <Button className="grid-item" text="AC" onClick={this.compute} />
+          <Button className="grid-item" text="+/-" onClick={this.compute} />
+          <Button className="grid-item" text="%" onClick={this.compute} />
+          <Button className="grid-item operator" text="÷" onClick={this.compute} />
+          <Button className="grid-item" text="7" onClick={this.compute} />
+          <Button className="grid-item" text="8" onClick={this.compute} />
+          <Button className="grid-item" text="9" onClick={this.compute} />
+          <Button className="grid-item operator" text="x" onClick={this.compute} />
+          <Button className="grid-item" text="4" onClick={this.compute} />
+          <Button className="grid-item" text="5" onClick={this.compute} />
+          <Button className="grid-item" text="6" onClick={this.compute} />
+          <Button className="grid-item operator" text="-" onClick={this.compute} />
+          <Button className="grid-item" text="1" onClick={this.compute} />
+          <Button className="grid-item" text="2" onClick={this.compute} />
+          <Button className="grid-item" text="3" onClick={this.compute} />
+          <Button className="grid-item operator" text="+" onClick={this.compute} />
+          <Button className="grid-zero" text="0" onClick={this.compute} />
+          <Button className="grid-item" text="." onClick={this.compute} />
+          <Button className="grid-item operator" text="=" onClick={this.compute} />
         </div>
       </div>
     );
