@@ -1,64 +1,54 @@
-import React from 'react';
+import { useState } from 'react';
 import calculate from '../logic/calculate';
+import Button from './Button';
 
-// eslint-disable-next-line react/prefer-stateless-function
-class Calculator extends React.Component {
-  constructor() {
-    super();
-    this.state = {
+function Calculator() {
+  const [values, setValues] = useState(
+    {
       total: null,
       next: null,
       operation: null,
-    };
-    this.compute = this.compute.bind(this);
-  }
+    },
+  );
 
-  compute(e) {
-    this.setState((state) => (calculate(state, e.target.innerHTML)));
-  }
+  const compute = (e) => {
+    setValues((values) => (calculate(values, e.target.innerHTML)));
+  };
 
-  keydown() {
-    console.log(this.state);
-  }
+  return (
+    <div className="main">
+      <div className="grid-container">
+        <div className="grid-itemResult">
+          <span>
+            {values.total}
 
-  render() {
-    const { total, next, operation } = this.state;
-    this.keydown();
-    return (
-      <div className="main">
-        <div className="grid-container">
-          <div className="grid-itemResult">
-            <span>
-              {total}
+            {values.operation}
 
-              {operation}
-
-              {next}
-            </span>
-          </div>
-          <div role="button" className="grid-item" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>AC</div>
-          <div role="button" className="grid-item" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>+/-</div>
-          <div role="button" className="grid-item" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>%</div>
-          <div role="button" className="grid-item operator" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>÷</div>
-          <div role="button" className="grid-item" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>7</div>
-          <div role="button" className="grid-item" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>8</div>
-          <div role="button" className="grid-item" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>9</div>
-          <div role="button" className="grid-item operator" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>x</div>
-          <div role="button" className="grid-item" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>4</div>
-          <div role="button" className="grid-item" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>5</div>
-          <div role="button" className="grid-item" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>6</div>
-          <div role="button" className="grid-item operator" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>-</div>
-          <div role="button" className="grid-item" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>1</div>
-          <div role="button" className="grid-item" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>2</div>
-          <div role="button" className="grid-item" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>3</div>
-          <div role="button" className="grid-item operator" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>+</div>
-          <div role="button" className="grid-zero" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>0</div>
-          <div role="button" className="grid-item" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>.</div>
-          <div role="button" className="grid-item operator" onKeyDown={this.keydown} tabIndex={0} onClick={this.compute}>=</div>
+            {values.next}
+          </span>
         </div>
+        <Button className="grid-item" text="AC" onClick={compute} />
+        <Button className="grid-item" text="+/-" onClick={compute} />
+        <Button className="grid-item" text="%" onClick={compute} />
+        <Button className="grid-item operator" text="÷" onClick={compute} />
+        <Button className="grid-item" text="7" onClick={compute} />
+        <Button className="grid-item" text="8" onClick={compute} />
+        <Button className="grid-item" text="9" onClick={compute} />
+        <Button className="grid-item operator" text="x" onClick={compute} />
+        <Button className="grid-item" text="4" onClick={compute} />
+        <Button className="grid-item" text="5" onClick={compute} />
+        <Button className="grid-item" text="6" onClick={compute} />
+        <Button className="grid-item operator" text="-" onClick={compute} />
+        <Button className="grid-item" text="1" onClick={compute} />
+        <Button className="grid-item" text="2" onClick={compute} />
+        <Button className="grid-item" text="3" onClick={compute} />
+        <Button className="grid-item operator" text="+" onClick={compute} />
+        <Button className="grid-zero" text="0" onClick={compute} />
+        <Button className="grid-item" text="." onClick={compute} />
+        <Button className="grid-item operator" text="=" onClick={compute} />
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default Calculator;
