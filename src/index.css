@@ -14,6 +14,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  border: 10px solid purple;
+  padding: 0 3em 0 3em;
+  height: 98vh;
+  background-image: url('./img/brennan-burling-ay53qag90W8-unsplash.jpg');
+  color: white;
 }
 
 code {
@@ -28,7 +33,7 @@ code {
 
 .main {
   display: flex;
-  height: 100vh;
+  height: 60vh;
   justify-content: center;
   align-items: center;
 }
@@ -104,4 +109,29 @@ code {
 
 .operator {
   background-color: orangered;
+}
+
+#calcH2 {
+  margin-top: 0;
+}
+
+.quoteCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 6em;
+  height: 23em;
+}
+
+blockquote {
+  font-size: 2.5em;
+}
+
+cite {
+  font-size: 1.5em;
+}
+
+a {
+  color: white;
 }
