@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Home Component renders all Home subelements correctly 1`] = `
+<div
+  className="container"
+>
+  <div>
+    <div
+      className="headerCont"
+    >
+      <h1>
+        Mathemagics
+      </h1>
+      <nav
+        className="navBar"
+      >
+        <ul>
+          <li
+            className="nav-link"
+          >
+            <a
+              activeclassname="active-link"
+              aria-current="page"
+              className="active"
+              exact="true"
+              href="/"
+              onClick={[Function]}
+            >
+              Home
+            </a>
+          </li>
+          <li
+            className="nav-link"
+          >
+            <a
+              activeclassname="active-link"
+              className=""
+              exact="true"
+              href="/calculator"
+              onClick={[Function]}
+            >
+              Calculator
+            </a>
+          </li>
+          <li
+            className="nav-link"
+          >
+            <a
+              activeclassname="active-link"
+              className=""
+              exact="true"
+              href="/quote"
+              onClick={[Function]}
+            >
+              Quote
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <h2>
+      Welcome to our page!
+    </h2>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam id officiis, saepe asperiores itaque et corrupti eveniet iste atque, doloremque minus neque delectus ullam, error numquam voluptate animi enim nisi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam id officiis, saepe asperiores itaque et corrupti eveniet iste atque, doloremque minus neque delectus ullam, error numquam voluptate animi enim nisi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam id officiis, saepe asperiores itaque et corrupti eveniet iste atque, doloremque minus neque delectus ullam, error numquam voluptate animi enim nisi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam id officiis, saepe asperiores itaque et corrupti eveniet iste atque, doloremque minus neque delectus ullam, error numquam voluptate animi enim nisi!
+    </p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam id officiis, saepe asperiores itaque et corrupti eveniet iste atque, doloremque minus neque delectus ullam, error numquam voluptate animi enim nisi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam id officiis, saepe asperiores itaque et corrupti eveniet iste atque, doloremque minus neque delectus ullam, error numquam voluptate animi enim nisi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam id officiis, saepe asperiores itaque et corrupti eveniet iste atque, doloremque minus neque delectus ullam, error numquam voluptate animi enim nisi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam id officiis, saepe asperiores itaque et corrupti eveniet iste atque, doloremque minus neque delectus ullam, error numquam voluptate animi enim nisi!
+    </p>
+  </div>
+</div>
+`;
