@@ -18,8 +18,8 @@
 
 ## See it live
 
-- [heroku deployment](https://mathemagics-jrcast.herokuapp.com/calculator)
-- [netlify deploymebt](https://mathemagics-jrcast.netlify.app/)
+- [heroku deployment](https://mathemagics-jrcast.herokuapp.com/)
+- [netlify deployment](https://mathemagics-jrcast.netlify.app/)
 
 ## Getting Started
 
