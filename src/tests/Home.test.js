@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import React from 'react';
 import renderer from 'react-test-renderer';
 import {
@@ -26,5 +26,17 @@ describe('Testing Home Component', () => {
   test('render home page first as index.html file', () => {
     render(<MemoryRouter><App /></MemoryRouter>);
     expect(screen.queryByText('Welcome to our page!')).not.toBeNull();
+  });
+
+  test('m e when link clicked', () => {
+    render(
+      <MemoryRouter>
+        <App>
+          <Home>
+            <Navbar />
+          </Home>
+        </App>
+      </MemoryRouter>);
+    screen.debug();
   });
 });
