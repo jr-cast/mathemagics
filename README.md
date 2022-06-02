@@ -16,6 +16,11 @@
 - React Router
 - React Testing Library 
 
+## See it live
+
+- [heroku deployment](https://mathemagics-jrcast.herokuapp.com/calculator)
+- [netlify deploymebt](https://mathemagics-jrcast.netlify.app/)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
