@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Mathemagics:  Full website 🈵
+# Mathemagics:  Tests 🧪!
 
 > "Mathemagics" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
 
@@ -14,7 +14,7 @@
 - HTML&CSS
 - create-react-app
 - React Router
-
+- React Testing Library 
 
 ## Getting Started
 

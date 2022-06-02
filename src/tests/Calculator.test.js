@@ -1,10 +1,9 @@
-import { fireEvent, render, screen } from "@testing-library/react";
-import React from "react";
+import { fireEvent, render, screen } from '@testing-library/react';
+import React from 'react';
 import renderer from 'react-test-renderer';
-import Calculator from "../components/Calculator";
+import Calculator from '../components/Calculator';
 
 describe('Testing Calculator compoenent', () => {
-
   test('it renders all Calculator components correctly', () => {
     const tree = renderer.create(<Calculator />).toJSON();
     expect(tree).toMatchSnapshot();
@@ -27,5 +26,4 @@ describe('Testing Calculator compoenent', () => {
     fireEvent.click(screen.queryByText('='));
     expect(screen.queryByText('3.5')).not.toBeNull();
   });
-})
-
+});
